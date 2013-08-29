@@ -1,7 +1,7 @@
 Cakephp-Currency-Helper
 =======================
 
-CakePHP-CurrencyHelper
+### CakePHP-CurrencyHelper
 
 For Cakephp 2.0 and above
 
@@ -14,19 +14,38 @@ Include it in the Controller or View as required.
 For including in a controller,
 
 After class declartion,
+
+
 public $helpers = array('Currency');
 
+
 For including in a view,
+
+
 $this->Helpers->load('Currency');
+
+
 
 Some examples
 
 $this->Currency->formatCurrency(1000045.25);             //1,000,045.25 (USD)         
+
+
 $this->Currency->formatCurrency(1000045.25, "CHF");      //1'000'045.25 
+
+
 $this->Currency->formatCurrency(1000045.25, "EUR");      //1.000.045,25 
+
+
 $this->Currency->formatCurrency(1000045, "JPY");         //1,000,045 
+
+
 $this->Currency->formatCurrency(1000045, "LBP");         //1 000 045 
+
+
 $this->Currency->formatCurrency(1000045.25, "NPR");      //10,00,045.25 
+
+
 $this->Currency->formatCurrency(1000045.25, "INR");      //10,00,045.25 
 
 The supported currencies are :-
